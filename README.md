@@ -6,4 +6,4 @@ additions in this version include:
 - displaying all possible survivor and minion states (accordingly to **scr_survivors**)
 - dispalying killer and their alt form states (accordingly to **scr_exe**)
 
-you're free to use this without Credit but it would be really awesome if you pasted the link to this repository in a mopd credits list if you used this 
+you're free to use this without Credit but it would be really awesome if you pasted the link to this repository in a mod credits list if you used this 
