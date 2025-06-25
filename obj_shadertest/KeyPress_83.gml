@@ -1,6 +1,6 @@
 char++;
 
-if(char > CHARACTER_SALLY + 4)
+if(char > CHARACTER_SONIC + 4)
 	char = CHARACTER_TAILS;
 
 ind = -1;
