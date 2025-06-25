@@ -387,8 +387,68 @@ switch(char)
 				break;
 		}
 		break;
-		
-	case CHARACTER_SALLY+1:
+
+	case CHARACTER_SONIC
+		switch(sprite)
+		{
+			case 0:
+				sprite_index = demon ? spr_esonic_idle : spr_sonic_idle;
+				break;
+			case 1:
+				sprite_index = demon ? spr_esonic_walk : spr_sonic_walk;
+				break;
+			case 2:
+				sprite_index = demon ? spr_esonic_run : spr_sonic_run;
+				break;
+			case 3:
+				sprite_index = demon ? spr_esonic_jump : spr_sonic_jump;
+				break;
+			case 4:
+				sprite_index = demon ? spr_esonic_fall : spr_sonic_fall;
+				break;
+			case 5:
+				sprite_index = demon ? spr_esonic_hurt : spr_sonic_hurt;
+				break;
+			case 6:
+				sprite_index = demon ? spr_esonic_stun : spr_sonic_dead;
+				break;
+			case 7:
+				sprite_index = demon ? spr_esonic_lookup : spr_sonic_lookup;
+				break;
+			case 8:
+				sprite_index = demon ? spr_esonic_lookdown : spr_sonic_lookdown;
+				break;
+			case 9:
+				sprite_index = demon ? spr_esonic_emotion1 : spr_sonic_emotion1;
+				break;
+			case 10:
+				sprite_index = demon ? spr_esonic_emotion2 : spr_sonic_emotion2;
+				break;
+			case 11:
+				sprite_index = demon ? spr_esonic_emotion3 : spr_sonic_emotion3;
+				break;
+			case 12:
+				sprite_index = demon ? spr_esonic_jump : spr_sonic_jump;
+				break;
+			case 13:
+				sprite_index = demon ? spr_esonic_balancing : spr_sonic_balancing;
+				break;
+			case 14:
+				sprite_index = demon ? spr_esonic_zipline : spr_sonic_zipline;
+				break;
+			case 15:
+				sprite_index = demon ? spr_esonic_spindash : spr_sonic_spindash;
+				break;
+			case 16:
+				sprite_index = demon ? spr_esonic_dropdash : spr_sonic_dropdash;
+				break;
+			default: 
+				alarm[0] = 1; 
+				break;
+		}
+		break;
+
+	case CHARACTER_SONIC+1:
 		switch(sprite)
 		{
 			case 0:
@@ -457,7 +517,7 @@ switch(char)
 		}
 		break;
 		
-	case CHARACTER_SALLY+2:
+	case CHARACTER_SONIC+2:
 		switch(sprite)
 		{
 			case 0:
@@ -541,7 +601,7 @@ switch(char)
 		}
 		break;
 		
-	case CHARACTER_SALLY+3:
+	case CHARACTER_SONIC+3:
 		switch(sprite)
 		{
 			case 0: sprite_index = spr_exetior_idle; break;
@@ -570,7 +630,7 @@ switch(char)
 		}
 		break;
 		
-	case CHARACTER_SALLY+4:
+	case CHARACTER_SONIC+4:
 		switch(sprite)
 		{
 			case 0: sprite_index = spr_exeller_idle; break;
@@ -614,7 +674,7 @@ shader_reset();
 
 var text = "none";
 
-if(ch <= CHARACTER_SALLY)
+if(ch <= CHARACTER_SONIC)
 {
 	if(!demon && ind > -1)
 	{
