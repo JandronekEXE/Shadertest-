@@ -18,9 +18,9 @@ scr_text_spr(0, 240, sprite);
 scr_text_spr(0, 250, frame);
 scr_text_spr(0, 260, "ctrl - toggle controls text");
 
-if(char > CHARACTER_SALLY)
+if(char > CHARACTER_SONIC)// replaced CHARACTER_SALLY with CHARACTER_SONIC due to Sonic being a 7th survivor
 {
-	ch -= CHARACTER_SALLY + 1;
+	ch -= CHARACTER_SONIC + 1;// replaced CHARACTER_SALLY with CHARACTER_SONIC due to Sonic being a 7th survivor
 	ch += PALETTE_EXE;
 }
 else if(demon)
@@ -448,7 +448,7 @@ switch(char)
 		}
 		break;
 
-	case CHARACTER_SONIC+1:
+	case CHARACTER_SONIC+1:// replaced CHARACTER_SALLY with CHARACTER_SONIC due to Sonic being a 7th survivor
 		switch(sprite)
 		{
 			case 0:
@@ -517,7 +517,7 @@ switch(char)
 		}
 		break;
 		
-	case CHARACTER_SONIC+2:
+	case CHARACTER_SONIC+2:// replaced CHARACTER_SALLY with CHARACTER_SONIC due to Sonic being a 7th survivor
 		switch(sprite)
 		{
 			case 0:
@@ -601,7 +601,7 @@ switch(char)
 		}
 		break;
 		
-	case CHARACTER_SONIC+3:
+	case CHARACTER_SONIC+3:// replaced CHARACTER_SALLY with CHARACTER_SONIC due to Sonic being a 7th survivor
 		switch(sprite)
 		{
 			case 0: sprite_index = spr_exetior_idle; break;
@@ -630,7 +630,7 @@ switch(char)
 		}
 		break;
 		
-	case CHARACTER_SONIC+4:
+	case CHARACTER_SONIC+4:// replaced CHARACTER_SALLY with CHARACTER_SONIC due to Sonic being a 7th survivor
 		switch(sprite)
 		{
 			case 0: sprite_index = spr_exeller_idle; break;
@@ -674,7 +674,7 @@ shader_reset();
 
 var text = "none";
 
-if(ch <= CHARACTER_SONIC)
+if(ch <= CHARACTER_SONIC)// replaced CHARACTER_SALLY with CHARACTER_SONIC due to Sonic being a 7th survivor
 {
 	if(!demon && ind > -1)
 	{
